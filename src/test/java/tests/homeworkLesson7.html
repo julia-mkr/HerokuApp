@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework for lesson 7</title>
+    <meta charset="UTF-8">
+    <style>
+            body {
+                margin: 0 auto;
+                font-family: 'Ubuntu', sans-serif;;
+            }
+            div {
+                border: 2px solid orangered;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+            }
+            table {
+                border: 2px solid lightcoral;
+            }
+            th, td {
+                text-align: center;
+                padding: 10px;
+                border: 1px dotted orchid;
+            }
+
+            select {
+                padding: 5px;
+                margin: 15px;
+            }
+            button {
+                font-size: 15px;
+                border: none;
+                border-radius: 5px;
+                background-color:blanchedalmond;
+                font-weight: bold;
+                width: 90px;
+                height: 30px;
+            }
+            button:hover {
+                background-color:lightsalmon;
+            }
+            a:hover {
+                color:tomato;
+            }
+            button, a {
+                padding: 5px 10px;
+                margin-top: 3px;
+                margin-right: 5px;
+            }
+            img {
+                position: relative;
+                margin: 10px;
+                padding: 9px;
+            }
+            input {
+                margin-bottom: 5px;
+                padding: 10px;
+                border-radius: 3px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .sign-up {
+                width: 200px;
+            }
+        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="table">
+    <h2>Table</h2>
+    <table>
+        <tr id="first_row">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+        <tr id="second_row">
+            <td>Karen</td>
+            <td>Black</td>
+            <td>karen-black@mail.com</td>
+        </tr>
+        <tr id="third_row">
+            <td>Joe</td>
+            <td>Smith</td>
+            <td>joe.smith@mail.com</td>
+        </tr>
+        <tr id="fourth_row">
+            <td>Ben</td>
+            <td>White</td>
+            <td>ben.white28@mail.com</td>
+        </tr>
+    </table>
+</div>
+<div id="input">
+    <h2>Input</h2>
+    <form>
+        <p><b>Email</b></p>
+        <input type="email" class="sign-up" id="email" name="email" placeholder="Enter email">
+        <br>
+        <p><b>Password</b></p>
+        <input type="password" class="sign-up" id="password" name="password" placeholder="Enter password">
+    </form>
+    <button type="submit">Submit</button>
+</div>
+<div id="checkbox">
+    <h2>Checkbox</h2>
+    <form>
+        <input type="checkbox" id="first" name="first">
+        <label for="first">First option</label>
+        <br>
+        <input type="checkbox" id="second" name="second">
+        <label for="second">Second option</label>
+        <br>
+        <input type="checkbox" id="third" name="third">
+        <label for="third">Third option</label>
+    </form>
+</div>
+<div id="select">
+    <h2>Select</h2>
+    <label for="options"><b>Choose something:</b></label>
+    <select name="options" id="options">
+        <option selected disabled>Default option</option>
+        <option value="opt1">Option 1</option>
+        <option value="opt2">Option 2</option>
+        <option value="opt3">Option 3</option>
+    </select>
+    <button type="submit">Submit</button>
+</div>
+<div id="button">
+    <h2>Button</h2>
+    <a href="https://www.google.com" target="_blank"><button>Google</button></a>
+    <a href="https://www.netflix.com" target="_blank"><button>Netflix</button></a>
+    <a href="https://www.spotify.com/" target="_blank"><button>Spotify</button></a>
+</div>
+<div id="images">
+    <h2>Images</h2>
+    <img src="https://i.pinimg.com/originals/92/cb/5a/92cb5a08020a1deb7b1093447b1dcd16.jpg" alt="Samoyed puppy" width="450" height="500" title="Samoyed puppy">
+    <img src="https://t1.uc.ltmcdn.com/images/4/6/5/como_saber_si_mi_husky_es_puro_50564_600_square.jpg" alt="Husky" width="450" height="500" title="Husky">
+    <img src="https://static.independent.co.uk/2021/07/09/11/newFile-6.jpg?width=982&height=726&auto=webp&quality=75" alt="Cat" width="450" height="500" title="Cat">
+</div>
+<div id="paragraph">
+    <h2>Paragraph</h2>
+    <h3>Paragraph 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veritatis earum deserunt dicta dignissimos necessitatibus
+        ipsa id praesentium blanditiis? Incidunt expedita adipisci accusantium labore dolor. Dolor dolore vitae laboriosam minus.</p>
+    <h3>Paragraph 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veritatis earum deserunt dicta dignissimos necessitatibus
+        ipsa id praesentium blanditiis? Incidunt expedita adipisci accusantium labore dolor. Dolor dolore vitae laboriosam minus.</p>
+</div>
+<div id="link">
+    <h2>Link</h2>
+    <a href="https://www.w3schools.com" target="_blank">W3schools</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://www.producthunt.com">Product Hunt</a>
+</div>
+</body>
+</html>
