@@ -37,7 +37,9 @@ public class DropDownTest {
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("http://the-internet.herokuapp.com/dropdown");
         Select dropdownElements = new Select(driver.findElement(By.id("dropdown")));
-        dropdownElements.selectByValue("1");
+        dropdownElements.selectByVisibleText("Option 1");
+        String textFromFirstOption = dropdownElements.getFirstSelectedOption().getText();
+        Assert.assertEquals(textFromFirstOption, "Option 1");
         driver.quit();
     }
 
@@ -50,7 +52,9 @@ public class DropDownTest {
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("http://the-internet.herokuapp.com/dropdown");
         Select dropdownElements = new Select(driver.findElement(By.id("dropdown")));
-        dropdownElements.selectByValue("2");
+        dropdownElements.selectByVisibleText("Option 2");
+        String textFromSecondOption = dropdownElements.getFirstSelectedOption().getText();
+        Assert.assertEquals(textFromSecondOption, "Option 2");
         driver.quit();
     }
 }
